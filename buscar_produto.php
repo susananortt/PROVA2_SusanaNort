@@ -37,6 +37,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h4>Susana Nort </h4>
     <h2>Lista de Produtos</h2>
 
 <!-- FORMULARIO PARA BUSCAR USUARIOS -->

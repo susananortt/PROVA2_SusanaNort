@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST"){
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h4>Susana Nort </h4>
     <h2>Cadastrar Produto</h2>
     <form action="cadastro_produto.php" method="POST">
         <label for="nome_prod">Nome do Produto: </label>

@@ -3,7 +3,7 @@ session_start();
 require 'conexao.php';
 
 // Verifica se o usuário tem permissão de ADM
-if ($_SESSION['perfil'] != 1) {
+if ($_SESSION['perfil'] != 1 && $_SESSION['perfil'] != 3) {
     echo "<script>alert('Acesso negado!'); window.location.href='principal.php';</script>";
     exit();
 }
@@ -42,6 +42,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h4>Susana Nort </h4>
     <h2>Excluir Usuário</h2>
 
     <?php if (!empty($produtos)): ?>

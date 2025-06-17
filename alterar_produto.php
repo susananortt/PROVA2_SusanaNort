@@ -3,8 +3,7 @@ session_start();
 require 'conexao.php';
 
 // Verifica se o usuário tem permissão de ADM
-if ($_SESSION['perfil'] != 1 && $_SESSION['perfil'] !=2 && $_SESSION['perfil'] !=3){
-
+if ($_SESSION['perfil'] != 1 && $_SESSION['perfil'] !=3){
     echo "<script>alert('Acesso negado!'); window.location.href='principal.php';</script>";
     exit();
 }
@@ -69,6 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['busca_produto']) && (!
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h4>Susana Nort </h4>
     <h2>Alterar Produto</h2>
 
     <!-- Formulário para buscar usuário pelo ID ou Nome -->
